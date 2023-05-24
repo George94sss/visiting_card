@@ -7,6 +7,7 @@ services:
     restart: always
     ports:
       - 80:8080
+
   # bot:
   #   build: bot/
   #   # command: python index.py
