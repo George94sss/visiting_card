@@ -5,6 +5,8 @@ services:
     build: app/
     command: npm run dev
     restart: always
+    expose:
+      - 8000
     ports:
       - 80:8080
 
