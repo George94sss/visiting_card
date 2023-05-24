@@ -6,7 +6,7 @@ services:
     command: npm run dev
     restart: always
     ports:
-      - 80:8080
+      - 8080:80
 
   # bot:
   #   build: bot/
