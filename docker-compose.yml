@@ -8,7 +8,7 @@ services:
       - "3000"
     ports:
       - "80:3000"
-      - host_ip: "81.163.31.152"
+    # host_ip: "81.163.31.152"
 
     command: npm run dev
 
