@@ -4,8 +4,8 @@ services:
   server:
     build: app_card/
     restart: always
-    expose:
-      - "3000"
+    # expose:
+    #   - "3000"
     ports:
       - "80:3000"
     # host_ip: "81.163.31.152"
