@@ -1,10 +1,15 @@
-FROM node:latest
+FROM node:16-alpine
 
-RUN mkdir /app
-WORKDIR /app
-COPY package.json /app/
+WORKDIR /frontend
+
+COPY package*.json ./
+
 RUN npm install
+
 COPY . .
+
 EXPOSE 3000
-# CMD ["npm ", "run ", "dev"]
-# CMD [ "node", "app.js"]
+
+RUN npm run build
+
+CMD npm run start

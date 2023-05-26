@@ -4,17 +4,6 @@ services:
   server:
     build: app_card/
     restart: always
-    # expose:
-    #   - "3000"
     ports:
       - "80:3000"
-    # host_ip: "81.163.31.152"
-
-    command: npm run build
-
-  # bot:
-  #   build: bot/
-  #   # command: python index.py
-  #   network_mode: host
-  #   depends_on:
-  #     - server
+    command: npm run start
