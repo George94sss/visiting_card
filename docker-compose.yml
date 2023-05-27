@@ -3,7 +3,11 @@ version: "3"
 services:
   server:
     build: app_card/
-    restart: always
+    # restart: always
     ports:
-      - "80:3000"
-    command: npm run start
+      - 80:3000
+    # volumes:
+    #   - ./app_card/public:/app/public
+    #   - ./app_card/src:/app/src
+    #   - ./app_card/styles:/app/styles
+    # # command: npm run start

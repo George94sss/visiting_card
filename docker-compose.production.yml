@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  server:
+    image: visiting_card
+    build:
+      dockerfile: ./app_card/Dockerfile.production
+    ports:
+      - 3000:3000
+    volumes: -./app_card/public:/app/public
+      -./app_card/src:/app/src
+      -./app_card/styles:/app/styles
+    # command: npm run start
